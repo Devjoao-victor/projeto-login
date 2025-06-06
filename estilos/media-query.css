@@ -12,8 +12,11 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    /*configuração para tablet */
+
     section#login {
         width: 80vw;
+        height: 290px;
     }
 
     section#login > div#imagem {
@@ -29,8 +32,12 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 992px) {
+
+    /*configuração para grandes telas */
+
     section#login {
         width: 950px;
+        height: 320px;
     }
 
     section#login > div#imagem {
