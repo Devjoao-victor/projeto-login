@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
@@ -15,7 +17,21 @@
             <div id="formulario">
                 <h1>LOGIN</h1>
                 <p>Welcome to your Bank of the Future</p>
-                <form action="login.js" method="post" ></form>
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    <div>
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Password" autocomplete="current-password" required minlength="8" maxlength="20"> 
+                        <label for="isenha">Password</label>
+                    </div>
+                    <input type="submit" value="Enter">
+                    <a href="esqueci.html">
+                        Forgot Password <span class="material-icons">mail</span>
+                    </a>
+                </form>
             </div>
         </section>
     </main>

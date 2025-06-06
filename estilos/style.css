@@ -18,7 +18,7 @@
 
 html, body {
     background-color: #002133;
-    background-image:linear-gradient(45deg,#000407,#041B3B,#21455c) ;
+    background-image:linear-gradient(45deg,#050B17,#02202A,#21455c) ;
     height: 100vh;
     width: 100vw;
 }
@@ -29,7 +29,7 @@ main {
     width: 100vw;
 }
 
-#login {
+section#login {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -40,19 +40,31 @@ main {
     position: absolute;
     border-radius: 20px;  
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.829);
+    transition: width 0.3s, heigt 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #002133 url(../imagens/dark-city-background-360rrxj5ajr8ecyt.jpg);
+    background: #002133 url(../imagens/dark-city-background-360rrxj5ajr8ecyt.jpg) no-repeat;
     background-size: cover;
     background-position: center top;
-    background-repeat: no-repeat;
     height: 240px;
 
 }
 
-#formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 0.8em;
 }
